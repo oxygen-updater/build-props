@@ -23,7 +23,7 @@ The extension can either be `.prop` (for a `build.prop` file), or `.getprop` (fo
 * `india`: India
 * `intl`: International/Global
 * Carrier variants (e.g. `t-mobile`, `sprint-5g`)  
-  Generally, start with the carrier name, followed by any other differentiator (e.g. wireless technology (`5g`)
+  Generally, start with the carrier name, followed by any other differentiator (e.g. wireless technology (`5g`))
 
 # FAQ
 ### How do we obtain these files?
