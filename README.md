@@ -3,7 +3,7 @@ This repo is meant for keeping a track of `build.prop`, `oem_build.prop` files a
 Some of these files were originally part of the [Android app repo](https://github.com/oxygen-updater/oxygen-updater) (and probably still are). We've separated them into their own repository, as it's easier to add/remove files if they're decoupled from the app's code.
 
 # File naming schemes
-File names are usually taken from the `ro.rom.version` field, stripping out "HydrogenOS", "OxygenOS", or variants of the OS name.  
+File names are usually taken from the `ro.rom.version` field, stripping out "HydrogenOS", "OxygenOS", or variants of the OS name. For Nord 2 5G, `ro.build.display.id` is used.
 The extension can either be `.prop` (for a `build.prop` or `oem_build.prop` file), or `.getprop` (for a `getprop` output), depending on what the file is.
 
 # Directory structure
