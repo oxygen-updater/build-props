@@ -335,7 +335,7 @@
 [persist.sys.isolated_storage]: [true]
 [persist.sys.kernel]: [yes]
 [persist.sys.launcher.set]: [true]
-[persist.sys.lite.uid]: [24bb23ac517b48f7814261c5fa25f95d]
+[persist.sys.lite.uid]: [************]
 [persist.sys.lmk.reportkills]: [false]
 [persist.sys.locale]: [en-US]
 [persist.sys.main]: [yes]
