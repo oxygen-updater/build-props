@@ -5,7 +5,7 @@ Some of these files were originally part of the [Android app repo](https://githu
 
 ## File naming schemes
 
-File names are usually taken from the `ro.rom.version` field, stripping out "HydrogenOS", "OxygenOS", or variants of the OS name. For Nord 2 5G, `ro.build.display.id` is used.
+File names are usually taken from the `ro.rom.version` field, stripping out "HydrogenOS", "OxygenOS", or variants of the OS name. For devices running on the ColorOS-based OxygenOS (eg Nord 2, 10 Pro), `ro.build.display.id` is used.
 The extension can either be `.prop` (for a `build.prop` or `oem_build.prop` file), or `.getprop` (for a `getprop` output), depending on what the file is.
 
 ## Directory structure
@@ -36,6 +36,9 @@ The extension can either be `.prop` (for a `build.prop` or `oem_build.prop` file
 ### How do we obtain these files?
 
 `build.prop`s and `oem_build.prop`s are usually extracted directly from the ZIP, or copied manually from a rooted device.
+They are located in `/system` partition for devices running versions of OxygenOS that are not based on ColorOS codebase. `oem_build.prop` files are specific to OxygenOS 11.
+For devices running on the ColorOS-based OxygenOS (meaning OxygenOS 11.3 and newer), the `build.prop` file is retrieved from `my_manifest` partition.
+
 A `getprop` output can be obtained either by:
 
 * Installing ADB, connecting the device, and running the `adb shell getprop > filename.getprop`
